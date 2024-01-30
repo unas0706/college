@@ -3,10 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>COLLEGE</title>    
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
-<body>
-    Hello World!!
-    My name is unas
+<body id="login-body">
+    <!-- for desktops and tablets -->
+    <div class="curve hidden-xs"></div>
+    <div id="login-container" class="hidden-xs">
+        <div class="hidden-xs" id="login-subcontainer">
+            <div class="hidden-xs" id="pic-area"></div>
+            <div class="hidden-xs" id="credentials">
+                <header class="hidden-xs" id="name-header"><h2><u>STUDENT</u></h2></header>
+                <form class="hidden-xs" action="/" method="post">
+                    <div class="hidden-xs" id="input-area">
+                        <input class="hidden-xs" required type="text" name="regno" id="regno" placeholder="Enter Regestration Number">
+                        <input class="hidden-xs" required type="password" name="pass" id="pass" placeholder="Enter Password">
+                        <a class="hidden-xs" href="#" id="forget-pass">Forget Password</a>
+                    </div>
+                    <div class="hidden-xs" id="submit-login">
+                        <input class="hidden-xs" id="submit-login-button" type="submit" value="SUBMIT">
+                    </div> 
+                    <div class="hidden-xs" id="error-login">Enter valid credentials</div>                   
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- for mobile devices -->
+    <div id="login-xs" class="visible-xs"> 
+        <div id="logo-xs"></div> 
+        <div id="name-login-xs">
+            <h2><u>STUDENT</u></h2>
+        </div> 
+        <form id="xs-login-form" action="/" method="post">
+            <div id="input-login-xs">
+                <input required type="text" name="regno" id="regno-xs" placeholder="Enter your Registration number">
+                <input required type="password" name="pass" id="pass-xs" placeholder="Enter Password">
+                <a href="#" id="forget-pass-xs">Forget Password</a>
+            </div>
+            <div id="submit-login-xs">
+                <input type="submit" value="Log in" id="submit-button-login-xs">
+            </div>
+        </form>
+    </div>
 </body>
 </html>

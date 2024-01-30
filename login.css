@@ -1,0 +1,121 @@
+:root {
+    --bg-color: #104C91;
+    --primary-color: #1F8AC0;
+    --secondary-color: #EFC9AF;
+    --font-family: sans-serif;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+#login-body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #fff;            
+    overflow: hidden;
+}
+.curve {
+    height: 100%;
+    width: 80%;
+    background-color: var(--secondary-color);
+    border-radius: 0 50% 50% 0;
+    position: relative;
+    right: 28%;
+}
+#login-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #104C91; */
+}
+#login-subcontainer {
+    height: 50%;
+    width: 80%;
+    background-color: #fff;
+    box-shadow: 0 0 20px 1px #888888;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+}
+#pic-area {
+    flex: none;
+    width: 55%;
+    height: 120%;
+    background: transparent;
+    background-image: url('logo-removebg.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#credentials {
+    flex: none;
+    width: 45%;
+    height: 100%;             
+}
+#name-header {
+    width: 100%;
+    height: 20%;
+    display: grid;
+    place-items: center;
+    color: var(--bg-color);
+}
+form {
+    width: 100%;
+    height: 80%;            
+}
+#input-area {
+    height: 60%;
+    width: 100%;           
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;          
+}
+#regno, #pass {
+    width: 80%;  
+    height: 30%;
+    padding: 0 5%;
+}        
+#forget-pass {
+    width: 80%;
+    text-align: left;            
+}
+#submit-login {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;            
+}
+#submit-login-button {
+    width: 70%;
+    color: #fff;                    
+    height: 80%;
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 20px;
+}
+#error-login {
+    opacity: 0;
+    border-radius: 20px;
+    margin: auto;
+    padding: 5px 10px;
+    width: 90%;
+    height: 15%;
+    background-color: rgb(232, 66, 66);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;                        
+} 
+.visible-xs {
+    display: none;
+}        
