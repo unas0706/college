@@ -18,7 +18,7 @@
     width: 100%;    
     font-size: 1.2rem;
     display: flex;
-    justify-content: center;
+    justify-content: center;        
     align-items: center;
     color: var(--bg-color);
 }
@@ -26,8 +26,157 @@
     height: 90%;
     width: 100%;
 }
+#student-details {
+    width: 90%;
+    height: 90%;    
+    /* background-color: var(--secondary-color); */
+    display: flex;
+    flex-wrap: wrap;
+}
 #student-profile {
-    height: 40%;
+    height: 30%;
+    width: 100%;    
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    /* border: 2px solid #000;  */
+}
+#student-img {
+    width: 30%;
+    height: 100%;  
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+}
+#student-profile-img {
+    width: 85%;
+    height: 90%;
+    border-radius: 50%;
+}
+#stdent-profile-details {    
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;    
+}
+#student-profile-table {
+    width: 80%;
+    height: 90%;
+}
+.student-head {
+    font-weight: bold;
+}
+.student-head, .student-body {    
+    width: 48%;  
+    text-align: center;     
+}
+.student-profile-colon {
+    width: 4%;
+}
+#student-operation {    
+    width: 80%;
+    margin: auto;
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.student-operation-button {
+    border: none;
+    color: var(--bg-color);
+    background-color: #fff;
+    font-size: 1.2rem;
+    width: 30%;    
+}
+.active {
+    text-decoration: underline;
+    font-weight: bold;
+}
+#student-information {
+    height: 59%;    
+    width: 90%;
+    margin: auto;   
+    overflow: hidden; 
+}
+#student-information-attendance {    
+    height: 100%;    
     width: 100%;
-    border: 2px solid #000;
+    /* border: 1px solid #000;     */
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;    
+}
+.student-attendance-division:nth-child(1) {
+    margin-top: 2%;
+}
+::-webkit-scrollbar {
+    width: 0;
+}
+.student-attendance-division {
+    scroll-snap-align: start;
+    cursor: pointer;    
+    margin: 5% auto;
+    width: 90%;
+    height: 20%;
+    box-shadow: 0 0 20px 1px #888888;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: var(--primary-color);    
+    transition: 0.5s;    
+}
+.student-attedance-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;  
+    font-size: 1.5rem;
+    color: var(--bg-color);  
+}
+.student-attendance-semester {
+    height: 0;
+    overflow: hidden;
+}
+.active-student-attedance-header {
+    height: 10%;    
+    width: 100%;
+    
+}
+.active-semester-attendance {
+    height: 90%;
+    width: 90%;    
+}
+.student-attendance-semester table {
+    width: 100%;
+    height: 80%;    
+}
+.student-attendance-semester table  tr, .student-attendance-semester table td {
+    text-align: center;
+    text-decoration: none;    
+}
+.close-attendance-button {
+    width: 100%;
+    height: 20%;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.close-attendance-button button {
+    width: 30%;
+    height: 60%;
+    border-color: none;
+    background-color: var(--bg-color);
+    color: #fff;
+    border-radius: 10px;  
+    cursor: pointer;      
+}
+#student-information-marks {
+    height: 100%;
+    width: 100%;    
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
 }
