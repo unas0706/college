@@ -78,5 +78,17 @@
         color: #fff;
         background-color: var(--bg-color);
         border-radius: 20px;
-    }          
+    }  
+    .college-name h1 {
+        font-size: 1.2rem;
+    }  
+    #student-operation, .college-name {
+        height: 5%;
+    }   
+    #student-img {
+        width: 40%;
+    }   
+    #stdent-profile-details {
+        width: 60%;
+    }
 }
